@@ -12,11 +12,13 @@ export default defineNuxtConfig({
           href: 'https://rsms.me/inter/inter.css',
         },
       ],
+      titleTemplate: '%s | SGDS Starter SAAS',
     },
   },
-  components: [
-    { path: '~/components', pathPrefix: false },
-  ],
+  components: {
+    global: true,
+    dirs: [{ path: '~/components', pathPrefix: false }],
+  },
   typescript: {
     typeCheck: true,
   },

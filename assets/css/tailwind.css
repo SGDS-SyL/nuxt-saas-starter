@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .notice {
+        @apply inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm rounded-full;
+    }
+    .notice-primary {
+        @apply text-primary-700 bg-primary-100 dark:bg-primary-900 dark:text-primary-300 hover:bg-primary-200 dark:hover:bg-primary-800
+    }
+    .notice-primary .title {
+        @apply bg-primary-600 text-white;
+    }
+    .notice-green {
+        @apply text-green-700 bg-green-100 dark:bg-green-900 dark:text-green-300 hover:bg-green-200 dark:hover:bg-green-800
+    }
+    .notice-green .title {
+        @apply bg-green-600 text-white;
+    }
+
+    .btn {
+        @apply inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:outline-none;
+    }
+    .btn-small {
+        @apply text-sm py-2;
+    }
+    .btn-outline {
+        @apply border text-gray-900  border-gray-300 hover:bg-gray-100 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800;
+    }
+    .btn-primary {
+        @apply text-white bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800;
+    }
+    .btn-blue {
+        @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+    }     
+    .btn-green {
+        @apply text-white bg-green-700 hover:bg-green-800 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800;
+    }     
+    .btn-red {
+        @apply text-white bg-red-700 hover:bg-red-800 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900;
+    }     
+
+    .form-input {
+        @apply block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500;
+    }
+}
