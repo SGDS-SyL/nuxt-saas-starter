@@ -12,6 +12,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "color-convert": "^2.0.1",
     "flowbite": "^1.8.1",
     "flowbite-vue": "^0.0.17"
   },
@@ -19,6 +20,8 @@
     "@antfu/eslint-config": "1.0.0-beta.24",
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
+    "@vueuse/core": "^10.5.0",
+    "@vueuse/nuxt": "^10.5.0",
     "eslint": "^8.51.0",
     "nuxt": "^3.7.4",
     "typescript": "^5.2.2",

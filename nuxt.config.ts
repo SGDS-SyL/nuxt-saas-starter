@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt',
   ],
   app: {
     head: {
@@ -13,6 +14,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+  components: [
+    { path: '~/components', pathPrefix: false },
+  ],
   typescript: {
     typeCheck: true,
   },
